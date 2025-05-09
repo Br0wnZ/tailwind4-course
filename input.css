@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-primary: #FF5A5A;
+  --color-primary-light: #FFDC80;
+  --color-primary-dark: #C13584;
+
+  /* Gradients */
+  --gradient-primary: linear-gradient(to bottom, var(--color-primary), var(--color-primary-dark));
+
+  /* Breakpoints */
+  --breakpoint-xs: 350px
+}
+
+.social-button {
+  @apply p-2 size-10 xs:size-12 flex items-center justify-center rounded-full hover:scale-110 transition-transform;
+}
